@@ -1,20 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name = "Descrioption" content="This is a book browser"/>
-        <link rel="shortcut icon" href="sign-language.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <title>Book Browser</title>
-        <style></style>
-        <script></script>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This Is Our Book Store" />
+</head>
+
+<body>
+    <div>
         <h1>Book Store</h1>
-        <img src="Project_Logo-BlackGroundpng.png" alt="Project_Logo-BlackGroundpng">
-    </body>
+        <p>This Is My Book Store, Welcome</p>
+    </div>
+
+    <form action="" method="GET">
+        <input type="hidden" value="Osama">
+        <div>
+            <label>Username</label>
+            <input type="text" required placeholder="Username" name="user" autofocus>
+        </div>
+        <br>
+        <div>
+            <label>Subject</label>
+            <input type="text" name="subject">
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input
+            type="password"
+            required
+            placeholder="Write A Complex Password"
+            name="pass"
+            minlength="10"
+            maxlength="20"
+            />
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" required placeholder="Write A Valid Email" value="o@nn.sa" name="mail">
+        </div>
+        <br>
+        <div>
+            <label>Color</label>
+            <input type="color" name="Color">
+        </div>
+        <br>
+        <div>
+            <label>Range</label>
+            <input type="range" name="range" min="0" max="100" step="20" value="80">
+        </div>
+        <br>
+        <div>
+            <label>Number</label>
+            <input type="number" name="number" min="10" max="100" step="10">
+        </div>
+        <hr>
+        <div>
+            <label >Geder: <br></label>
+
+            <label for="m">Male</label>
+            <input id="m" type="radio" name="os" value="male" checked>
+            
+            <label for="f">Female</label>
+            <input id="f" type="radio" name="os" value="female">
+        </div>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Save">
+    </form>
+</body>
+
 </html>
-<!-- First Part, user egency
+<!-- Layout With Semantic Elements
+<header>
+    <h2>Logo</h2>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact Us</li>
+    </ul>
+</header>
+<hr>
+<nav>
+    <li>Link</li>
+    <li>Link</li>
+    <li>Link</li>
+    <li>Link</li>
+    <li>Link</li>
+    <li>Link</li>
+    <li>Link</li>
+    <li>Link</li>
+</nav>
+<hr>
+<section>
+    <figure>
+        <img decoding="async" src="imgs/home/cover-speed-website.png" alt="">
+        <figcaption>Caption Of The Image</figcaption>
+    </figure>
+</section>
+<aside>
+    Sidebar
+</aside>
+<hr>
+<footer>
+    Footer
+</footer> -->
+
+<!-- Table Assignment
+<caption>Members Data</caption>
+<table style="width: 100%;" border="1">
+    <thead>
+        <tr>
+            <th>Group</th>
+            <th>Avatar</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Character</th>
+            <th>Profile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">G1</td>
+            <td><img src="Logo.ico" width="40" height="40"></td>
+            <td>Ammar<br>Ahmed</td>
+            <td>a1@nn.eg
+                <hr> a2@nn.eg
+            </td>
+            <td>a</td>
+            <td><a href="http://Profile.com" target="_blank">Profile</a> </td>
+        </tr>
+        <tr>
+            <td><img src="Logo.ico" width="40" height="40"></td>
+            <td>Mostafa <br>Medhad</td>
+            <td>mos@nn.eg</td>
+            <td>a</td>
+            <td><a href="http://Profile.com" target="_blank">Profile</a> </td>
+        </tr>
+        <tr>
+            <td>G2</td>
+            <td><img src="Logo.ico" width="40" height="40"></td>
+            <td>Magdy <br>Emad</td>
+            <td>mag@nn.eg</td>
+            <td>a</td>
+            <td><a href="http://Profile.com" target="_blank">Profile</a> </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">Total Members</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+</table> -->
+
+<!-- Unorderd List
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>
+        C#
+        <ul>
+            <li>Console</li>
+            <li>Windows Form</li>
+            <li>WPF</li>
+        </ul>
+    </li>
+</ul>
+Orderd List
+<ol type="A">
+    <li>name</li>
+    <li>Age</li>
+    <li>ID</li>
+</ol> -->
+
+<!-- First Part, formating text
 <p>This is my <strong>Book Store, Welcome</strong></p>
 <p>This is my <em>Book Store, Welcome</em></p>
 <p>This is my Book Store, <mark>Welcome</mark></p>
