@@ -1,0 +1,81 @@
+body,
+ul,
+header {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 160px;
+}
+
+body a {
+    display: block;
+    text-decoration: none;
+}
+
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header .topBar {
+    display: flex;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topBar input[type="search"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 60%;
+}
+
+.topBar a {
+    color: tomato;
+    font-size: 15px;
+    padding: 0px 10px 0px 10px;
+}
+
+header nav {
+    display: block;
+    background-color: brown;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    margin: 0px;
+    padding: 10px;
+}
+
+nav li a {
+    color: white;
+}
+
+main {
+    margin: -36px;
+    padding: 0px;
+}
+
+main section {
+    width: fit-content;
+}
+
+section .theImgBorder {
+    background-color: tomato;
+    border-radius: 100%;
+
+}
