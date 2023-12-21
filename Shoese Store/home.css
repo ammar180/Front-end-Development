@@ -8,16 +8,20 @@ header {
 body {
     padding-top: 160px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 160px;
 }
 
 body a {
     display: block;
+    color: white;
     text-decoration: none;
     color: white;
 }
 
 header {
     display: block;
+    height: 110px;
+    background-color: #232c5b;
     width: 100%;
     position: fixed;
     top: 0;
@@ -26,27 +30,29 @@ header {
 
 header .topBar {
     display: flex;
-    background-color: #f5f5f5;
     justify-content: space-between;
     align-items: center;
 }
 
 .topBar input[type="search"] {
-    border: 1px solid #ccc;
+    border: none;
+    background-color: gray;
     border-radius: 5px;
-    padding: 8px;
+    padding: 10px;
     width: 60%;
+}
+
+.topBar input[type="search"]::placeholder {
+    color: white;
 }
 
 .topBar a {
     color: tomato;
     font-size: 15px;
-    padding: 0px 10px 0px 10px;
 }
 
 header nav {
     display: block;
-    background-color: brown;
     width: 100%;
 }
 
@@ -60,56 +66,112 @@ nav ul {
 
 nav li {
     margin: 0px;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 nav li a {
     color: white;
+    transition: 0.5s;
+}
+
+nav li a:hover {
+    color: tomato;
+    font-size: 25px;
+    padding: 0px 10px 0px 10px;
 }
 
 main {
-    margin: -36px;
+    margin: 0px;
     padding: 0px;
 }
 
-main section {
+main .slider {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+    margin-top: -50px;
+}
+
+main .slider .product1 {
     display: flex;
     justify-content: center;
     width: min-content;
     height: min-content;
 
-    margin: 0px;
+    margin-top: 30px;
     padding: 0px;
 }
 
-section .theImgBorder {
+.slider .product1 #Rs999 {
+    border: 1px solid grey;
+    color: green;
+    font-size: 60px;
+    width: max-content;
+    height: fit-content;
+}
+
+.product1 .theImgBorder {
     background-image: linear-gradient(to right, orange, tomato);
     background-color: tomato;
     border-radius: 100%;
 
 }
 
-section .theText {
+.product1 .theText {
     margin-left: -131px;
     margin-top: 100px;
     width: 300px;
     text-align: left;
 }
 
-section .theText p {
+.product1 .theText p {
     color: green;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 0px;
 }
 
-section .theText #btnBuy {
+.product1 .theText #btnBuy {
     border: none;
     border-radius: 5px;
     font-size: 30px;
     font-weight: bold;
     color: white;
     background-color: black;
-    padding: 17px;
+    padding: 10px;
     margin-top: 32px;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: min-content;
+    list-style-type: none;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+main ul li {
+    text-align: center;
+    margin: 0px;
+    padding-left: 20px;
+    width: 10%;
+}
+
+main ul li p {
+    color: gray;
+    font-size: 16px;
+}
+
+main ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+.ValidationForm {
+    border: 1px solid black;
+
 }
