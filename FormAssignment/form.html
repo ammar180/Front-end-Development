@@ -9,9 +9,11 @@
 </head>
 
 <body>
-    <form action="" target="_blank" class="FormBody">
+    <form action="" method="POST" target="_blank" class="FormBody">
         <h2 id="theCaption">Create Account</h2>
         <div class="theFaild">
+            <label for="userName" class="labels" id="labUsername">User Name:</label>
+            <input type="text" name="userName" id="userName" class="txt">
             <label for="userName" class="labels">User Name:</label>
             <input type="text" name="userName" id="userName" placeholder="Enter User Name" class="txt">
         </div>
@@ -32,7 +34,7 @@
         </div>
 
         <div class="theBtn">
-            <input type="submit" id="btnSubmint" value="Submit">
+            <input type="submit" id="btnSubmint"  onclick="funSubmit()" value="Submit">
         </div>
     </form>
 </body>
