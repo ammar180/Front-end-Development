@@ -7,11 +7,13 @@ header {
 
 body {
     padding-top: 160px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body a {
     display: block;
     text-decoration: none;
+    color: white;
 }
 
 header {
