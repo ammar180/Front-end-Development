@@ -6,9 +6,7 @@ header {
 }
 
 body {
-    padding-top: 160px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 160px;
+    font-family: "Lato", sans-serif
 }
 
 body a {
@@ -30,19 +28,19 @@ header {
 
 header .topBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.topBar input[type="search"] {
+.txtSearch {
     border: none;
     background-color: gray;
     border-radius: 5px;
-    padding: 10px;
-    width: 60%;
+    padding: 8px;
+    width: 50%;
 }
 
-.topBar input[type="search"]::placeholder {
+.txtSearch::placeholder {
     color: white;
 }
 
@@ -77,11 +75,11 @@ nav li a {
 nav li a:hover {
     color: tomato;
     font-size: 25px;
-    padding: 0px 10px 0px 10px;
+    /* padding: 0px 10px 0px 10px; */
 }
 
 main {
-    margin: 0px;
+    margin-top: 160px;
     padding: 0px;
 }
 
@@ -105,6 +103,9 @@ main .slider .product1 {
 }
 
 .slider .product1 #Rs999 {
+    position: absolute;
+    left: 20%;
+    top: 20%;
     border: 1px solid grey;
     color: green;
     font-size: 60px;
@@ -120,9 +121,10 @@ main .slider .product1 {
 }
 
 .product1 .theText {
-    margin-left: -131px;
-    margin-top: 100px;
-    width: 300px;
+    position: absolute;
+    right: 0%;
+    top: 22%;
+    width: 284px;
     text-align: left;
 }
 
@@ -133,14 +135,18 @@ main .slider .product1 {
     margin-bottom: 0px;
 }
 
-.product1 .theText #btnBuy {
+.btnBuy {
     border: none;
     border-radius: 5px;
     font-size: 30px;
     font-weight: bold;
     color: white;
     background-color: black;
-    padding: 10px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.product1 .theText .btnBuy {
     margin-top: 32px;
 }
 
@@ -150,7 +156,7 @@ main ul {
     height: min-content;
     list-style-type: none;
     border: none;
-    margin: 0px;
+    margin: -10px 0px -25px 0px;
     padding: 0px;
 }
 
@@ -171,7 +177,98 @@ main ul li img {
     height: 50px;
 }
 
-.ValidationForm {
+.AirForce {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #eee;
+    text-align: left;
+    clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+}
+
+.AirForce .AirForceImg {
+    width: 56%;
+    max-height: 727px;
+    height: fit-content;
+}
+
+.AirForce .AirForceInfo {
+    padding: 106px 25px 0px 40px;
+    margin: 0;
+    position: relative;
+}
+
+.AirForce .AirForceInfo h1 {
+    font-size: 75px;
+    font: weight 600px;
+    ;
+}
+
+.AirForce .AirForceInfo .colorBoxs p {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.AirForce .AirForceInfo .size {
+    display: flex;
+}
+
+.AirForce .AirForceInfo .size p {
+    color: black;
     border: 1px solid black;
+    margin-right: 10px;
+    font-size: 22px;
+    width: 50px;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.AirForce .AirForceInfo .btnBuy {
+    font-size: 20px;
+    justify-items: left;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul p {
+    font-weight: 600;
+}
+
+footer ul li {
+    cursor: pointer;
+    color: gray;
+    padding: 5px 0px 5px;
+}
+
+footer .Subscribe {
+    width: 20%;
+}
+
+footer .Subscribe img {
+    width: 25px;
+    height: 25px;
+    padding-right: 9px;
+    cursor: pointer;
+}
+
+footer .Subscribe .txtSearch{
+    width: 72%;
+}
+footer .Subscribe .btnBuy{
+    font-size: 16px;
 
 }
