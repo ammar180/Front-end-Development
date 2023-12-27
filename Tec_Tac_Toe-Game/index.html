@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tec Tac Toe Game!</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(144, 165, 42);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .boxesBody{
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 15px;
+        }
+        .box{
+            border: none;
+            border-radius: 5px;
+            background-color: tomato;
+            font-size: 100px;
+            width: 100px;
+            height: 130px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxesBody">
+        <button id="a1" onclick="updateBox('a1')" class="box"></button>
+        <button id="a2" onclick="updateBox('a2')" class="box"></button>
+        <button id="a3" onclick="updateBox('a3')" class="box"></button>
+
+        <button id="b1" onclick="updateBox('b1')" class="box"></button>
+        <button id="b2" onclick="updateBox('b2')" class="box"></button>
+        <button id="b3" onclick="updateBox('b3')" class="box"></button>
+
+        <button id="c1" onclick="updateBox('c1')" class="box"></button>
+        <button id="c2" onclick="updateBox('c2')" class="box"></button>
+        <button id="c3" onclick="updateBox('c3')" class="box"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
