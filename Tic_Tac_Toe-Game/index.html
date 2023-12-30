@@ -4,50 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Tec Tac Toe Game!</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: rgb(144, 165, 42);
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .boxesBody{
-            display: grid;
-            border: 1px solid black;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            grid-gap: 15px;
-        }
-        .box{
-            border: none;
-            border-radius: 5px;
-            background-color: tomato;
-            font-size: 100px;
-            width: 100px;
-            height: 130px;
-            padding: 10px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="boxesBody">
-        <button id="a0" onclick="GameLogic('a0')" class="box"></button>
-        <button id="a1" onclick="GameLogic('a1')" class="box"></button>
-        <button id="a2" onclick="GameLogic('a2')" class="box"></button>
+    <div class="playersInfo">
+        <div class="player1">
+            <p>Player1:</p>
+            <label for="PlayerName1">Player Name:</label>
+            <input type="text" name="txtPlayerName1" placeholder="Player Name" id="PlayerName1">
+            <br>
+            <label>Player Symbol:</label>
+            <input type="radio" checked name="symbol1" id="s1_1" value="X"> <label for="s1_1">X</label>
+            <input type="radio" name="symbol1" id="s1_2" value="O"> <label for="s1_2">O</label>
+        </div>
+        <div class="player2">
+            <p>Player2:</p>
+            <label for="PlayerName2">Player Name:</label>
+            <input type="text" name="txtPlayerName2" placeholder="Player Name" id="PlayerName2">
+            <br>
+            <label id="p2Symbol">Player Symbol: 'O'</label>
 
-        <button id="b0" onclick="GameLogic('b0')" class="box"></button>
-        <button id="b1" onclick="GameLogic('b1')" class="box"></button>
-        <button id="b2" onclick="GameLogic('b2')" class="box"></button>
-
-        <button id="c0" onclick="GameLogic('c0')" class="box"></button>
-        <button id="c1" onclick="GameLogic('c1')" class="box"></button>
-        <button id="c2" onclick="GameLogic('c2')" class="box"></button>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <div class="boxesBody">
+        <table>
+            <tr class="a">
+                <td class="_0">
+                    <button id="a0" onclick="GameLogic('a0')" class="box"></button>
+                </td>
+                <td class="_1">
+                    <button id="a1" onclick="GameLogic('a1')" class="box"></button>
+                </td>
+                <td class="_2">
+                    <button id="a2" onclick="GameLogic('a2')" class="box"></button>
+                </td>
+            </tr>
+            <tr class="b">
+                <td class="_0">
+                    <button id="b0" onclick="GameLogic('b0')" class="box"></button>
+                </td>
+                <td class="_1">
+                    <button id="b1" onclick="GameLogic('b1')" class="box"></button>
+                </td>
+                <td class="_2">
+                    <button id="b2" onclick="GameLogic('b2')" class="box"></button>
+                </td>
+            </tr>
+            <tr class="c">
+                <td class="_0">
+                    <button id="c0" onclick="GameLogic('c0')" class="box"></button>
+                </td>
+                <td class="_1">
+                    <button id="c1" onclick="GameLogic('c1')" class="box"></button>
+                </td>
+                <td class="_2">
+                    <button id="c2" onclick="GameLogic('c2')" class="box"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="pointsConaner">
+        <p id="p1Label">x</p>
+        <p id="p2Label">o</p>
+        <button onclick="clearBoxs()">Reset</button>
+        <button onclick="clearBoxs()">Now Game</button>
+    </div>
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
