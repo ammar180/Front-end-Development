@@ -9,30 +9,44 @@
 </head>
 
 <body>
-    <form action="" method="POST" target="_blank" class="FormBody">
+    <form name="validationForm" action="" method="POST" target="_blank" onsubmit="return validateForm()"
+        class="FormBody">
         <h2 id="theCaption">Create Account</h2>
         <div class="theFaild">
             <label for="userName" class="labels">User Name:</label>
-            <input type="text" name="userName" id="userName" placeholder="Enter User Name" class="txt">
+            <input type="text" name="userName" id="userName" value="" placeholder="Enter User Name" required
+                class="txt">
         </div>
 
         <div class="theFaild">
             <label for="email" class="labels">Email:</label>
-            <input type="email" name="email" id="email" placeholder="ex.'ammar@am.aao'" class="txt">
+            <input type="email" name="email" id="email" placeholder="ex.'ammar@am.aao'" required class="txt">
         </div>
 
         <div class="theFaild">
             <label class="labels" for="pass">Password:</label>
-            <input type="password" name="password" id="pass" placeholder="Enter a Strong Password" class="txt">
+            <input type="password" name="password" id="pass" placeholder="Enter a Strong Password" required class="txt">
         </div>
 
         <div class="theFaild">
-            <label class="labels" for="confPass">Confirm Password:</label>
-            <input type="password" name="confPass" id="confPass" placeholder="Write the same password" class="txt">
+            <label class="labels" for="confPassword">Confairm Password:</label>
+            <input type="text" name="confPassword" id="confPassword" placeholder="The Same Password" required
+                class="txt">
         </div>
 
+        <div class="theFaild">
+            <label class="labels" for="confPass">Gender:</label>
+
+            <input type="radio" name="Gender" id="male" class="Radiobtn">
+            <label for="male">Male</label>
+
+            <input type="radio" name="Gender" id="female" class="Radiobtn">
+            <label for="female">Female</label>
+        </div>
+
+
         <div class="theBtn">
-            <input type="submit" id="btnSubmint"  onclick="funSubmit()" value="Submit">
+            <input id="btnSubmint" type="submit" value="Submit">
         </div>
     </form>
 </body>
