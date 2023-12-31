@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tec Tac Toe Game!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="playersInfo">
+        <div class="player1">
+            <p>Player1:</p>
+            <label for="PlayerName1">Player Name:</label>
+            <input type="text" name="txtPlayerName1" placeholder="Player Name" id="PlayerName1">
+            <br>
+            <label>Player Symbol:</label>
+            <input type="radio" checked name="symbol1" id="s1_1" value="X"> <label for="s1_1">X</label>
+            <input type="radio" name="symbol1" id="s1_2" value="O"> <label for="s1_2">O</label>
+        </div>
+        <div class="player2">
+            <p>Player2:</p>
+            <label for="PlayerName2">Player Name:</label>
+            <input type="text" name="txtPlayerName2" placeholder="Player Name" id="PlayerName2">
+            <br>
+            <label id="p2Symbol">Player Symbol: 'O'</label>
+
+        </div>
+    </div>
+    <div class="boxesBody">
+        <table>
+            <tr class="a">
+                <td class="_0">
+                    <button id="a0" onclick="GameLogic('a0')" class="box"></button>
+                </td>
+                <td class="_1">
+                    <button id="a1" onclick="GameLogic('a1')" class="box"></button>
+                </td>
+                <td class="_2">
+                    <button id="a2" onclick="GameLogic('a2')" class="box"></button>
+                </td>
+            </tr>
+            <tr class="b">
+                <td class="_0">
+                    <button id="b0" onclick="GameLogic('b0')" class="box"></button>
+                </td>
+                <td class="_1">
+                    <button id="b1" onclick="GameLogic('b1')" class="box"></button>
+                </td>
+                <td class="_2">
+                    <button id="b2" onclick="GameLogic('b2')" class="box"></button>
+                </td>
+            </tr>
+            <tr class="c">
+                <td class="_0">
+                    <button id="c0" onclick="GameLogic('c0')" class="box"></button>
+                </td>
+                <td class="_1">
+                    <button id="c1" onclick="GameLogic('c1')" class="box"></button>
+                </td>
+                <td class="_2">
+                    <button id="c2" onclick="GameLogic('c2')" class="box"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="pointsConaner">
+        <p id="p1Label">x</p>
+        <p id="p2Label">o</p>
+        <button onclick="clearBoxs()">Reset</button>
+        <button onclick="clearBoxs()">Now Game</button>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
