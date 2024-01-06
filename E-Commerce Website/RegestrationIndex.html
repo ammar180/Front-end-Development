@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="RegestrationStyle.css">
+    <title>E-commerce - Regestion Page</title>
+</head>
+
+<body>
+    <section id="LoginForm">
+        <h1>Login Form</h1>
+        <br><label for="Login-txtUserName">User Name</label>
+        <input type="text" name="Login-userName" id="Login-txtUserName" placeholder="user name">
+
+        <br><label for="Login-txtPass">Password</label>
+        <input type="text" name="Login-pass" id="Login-txtPass" placeholder="Password">
+
+        <br><button onclick="funcLogin()" id="btnLogin">Login</button><br>
+        <br><a href="#ForgetPassForm"><button>Forget Password</button></a><br>
+
+        <br><a href="#SignUpForm">Don't have an account</a><br>
+
+    </section>
+    <hr>
+    <section id="SignUpForm">
+        <h1>Sign-Up Form</h1>
+
+        <br><label for="SingUp-txtUserName">User Name</label>
+        <input type="text" name="singup-userName" id="SingUp-txtUserName" placeholder="userName">
+
+        <br><label for="SingUp-txtPass">Password </label>
+        <input type="password" name="singup-password" id="SingUp-txtPass" placeholder="Password">
+
+        <br><label for="SingUp-age">Age</label>
+        <input type="number" name="singup-age" id="SingUp-age" placeholder="Age">
+
+        <br><label for="SingUp-gender">Gender:</label>
+        <input type="radio" name="singup-gender" checked id="m" value="Male"><label for="m">Male</label>
+        <input type="radio" name="singup-gender" id="f" value="Female"><label for="f">Female</label>
+
+        <br><label for="SingUp-phoneNumber">Phone Number</label>
+        <input type="text" name="singup-gender" id="SingUp-phoneNumber" placeholder="phone number">
+
+        <br><button id="btnSubmit" onclick="funcSignUp()">Submit</button>
+    </section>
+    <hr>
+    <section id="ForgetPassForm">
+        <h1>Forget Password Page</h1>
+
+        <br><label for="fp-userName">User Name</label>
+        <input type="text" name="userName" id="fp-userName" placeholder="user name">
+
+        <br><label for="fp-txtPass">Password</label>
+        <input type="text" name="pass" id="fp-txtPass" placeholder="Password">
+
+        <br><button onclick="funcForgetPass()" id="btnUpdate">Update</button>
+    </section>
+    <script src="RegestrationApp.js"></script>
+</body>
+
+</html>

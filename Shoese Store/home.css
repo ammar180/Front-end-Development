@@ -70,42 +70,48 @@ nav li {
 nav li a {
     color: white;
     transition: 0.5s;
+
 }
 
 nav li a:hover {
     color: tomato;
-    font-size: 25px;
     /* padding: 0px 10px 0px 10px; */
 }
 
 main {
-    margin-top: 160px;
     padding: 0px;
+}
+
+#slider-wrapper {
+    display: flex;
+    margin: 0 auto;
+    background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    justify-content: center;
+
+    margin-top: 110px;
 }
 
 main .slider {
     display: flex;
-    justify-content: center;
-    background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    width: 50vw;
     overflow: hidden;
-    margin-top: -50px;
+    scroll-behavior: smooth;
 }
 
-main .slider .product1 {
+main .slider section {
     display: flex;
     justify-content: center;
     width: min-content;
     height: min-content;
 
-    margin-top: 30px;
+    margin: 30px 20px;
     padding: 0px;
 }
 
-.slider .product1 #Rs999 {
+.slider section #Rs999 {
     position: absolute;
     left: 20%;
-    top: 20%;
+    top: 30%;
     border: 1px solid grey;
     color: green;
     font-size: 60px;
@@ -113,22 +119,22 @@ main .slider .product1 {
     height: fit-content;
 }
 
-.product1 .theImgBorder {
+.slider .theImgBorder {
     background-image: linear-gradient(to right, orange, tomato);
     background-color: tomato;
     border-radius: 100%;
 
 }
 
-.product1 .theText {
+section .theText {
     position: absolute;
-    right: 0%;
-    top: 22%;
+    right: 20%;
+    top: 30%;
     width: 284px;
     text-align: left;
 }
 
-.product1 .theText p {
+section .theText p {
     color: green;
     font-size: 50px;
     font-weight: bold;
@@ -156,7 +162,7 @@ main ul {
     height: min-content;
     list-style-type: none;
     border: none;
-    margin: -10px 0px -25px 0px;
+    margin: 10px 0px -25px 0px;
     padding: 0px;
 }
 
@@ -201,7 +207,7 @@ main ul li img {
 .AirForce .AirForceInfo h1 {
     font-size: 75px;
     font: weight 600px;
-    ;
+
 }
 
 .AirForce .AirForceInfo .colorBoxs p {
@@ -265,10 +271,11 @@ footer .Subscribe img {
     cursor: pointer;
 }
 
-footer .Subscribe .txtSearch{
+footer .Subscribe .txtSearch {
     width: 72%;
 }
-footer .Subscribe .btnBuy{
+
+footer .Subscribe .btnBuy {
     font-size: 16px;
 
 }

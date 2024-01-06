@@ -1,0 +1,86 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2> git init
+Initialized empty Git repository in C:/Users/IT/Desktop/AmmarAhmed-W3-522011_Day2/.git/
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2> git add --all
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   HomeIndex.html
+        new file:   HomeStyle.css
+        new file:   RegestrationApp.js
+        new file:   RegestrationIndex.html
+        new file:   RegestrationStyle.css
+        new file:   ReviewIndex.html
+        new file:   ReviewScript.js
+        new file:   ReviewStyle.css
+        new file:   ShoppingCartIndex.html
+        new file:   ShoppingCartStyle.css
+        new file:   Task3&5_Day2.pdf
+        new file:   TestCase_Task4_Day1.docx
+        new file:   Web Application Case Study.pdf
+        new file:   img/1.jpg
+        new file:   img/Cap1 - Copy.jfif
+        new file:   img/Cap2 - Copy.jfif
+        new file:   img/Cap3 - Copy.jfif
+        new file:   img/T_shirt1 - Copy.jfif
+        new file:   img/T_shirt2 - Copy.jfif
+        new file:   img/T_shirt3 - Copy.jfif
+        new file:   img/air - Copy.png
+        new file:   img/hippie - Copy.png
+        new file:   img/jordan - Copy.png
+        new file:   img/pant1 - Copy.jpg
+        new file:   img/pant2 - Copy.jpg
+        new file:   img/pant3 - Copy.jpg
+
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2> git commit -m "Deafult Commit"
+[master (root-commit) 700dfba] Deafult Commit
+ 26 files changed, 992 insertions(+)
+ create mode 100644 HomeIndex.html
+ create mode 100644 HomeStyle.css
+ create mode 100644 RegestrationApp.js
+ create mode 100644 RegestrationIndex.html
+ create mode 100644 RegestrationStyle.css
+ create mode 100644 ReviewIndex.html
+ create mode 100644 ReviewScript.js
+ create mode 100644 ReviewStyle.css
+ create mode 100644 ShoppingCartIndex.html
+ create mode 100644 ShoppingCartStyle.css
+ create mode 100644 Task3&5_Day2.pdf
+ create mode 100644 TestCase_Task4_Day1.docx
+ create mode 100644 Web Application Case Study.pdf
+ create mode 100644 img/1.jpg
+ create mode 100644 img/Cap1 - Copy.jfif
+ create mode 100644 img/Cap2 - Copy.jfif
+ create mode 100644 img/Cap3 - Copy.jfif
+ create mode 100644 img/T_shirt1 - Copy.jfif
+ create mode 100644 img/T_shirt2 - Copy.jfif
+ create mode 100644 img/T_shirt3 - Copy.jfif
+ create mode 100644 img/air - Copy.png
+ create mode 100644 img/hippie - Copy.png
+ create mode 100644 img/jordan - Copy.png
+ create mode 100644 img/pant1 - Copy.jpg
+ create mode 100644 img/pant2 - Copy.jpg
+ create mode 100644 img/pant3 - Copy.jpg
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2> git remote add origin https://github.com/ammar180/Exam-WebApplications_Ecommerce.git
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2> git remote add origin https://github.com/ammar180/Exam-WebApplications_Ecommerce.git
+error: remote origin already exists.
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2> git push -u origin master
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (29/29), 1.65 MiB | 1.08 MiB/s, done.
+Total 29 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/ammar180/Exam-WebApplications_Ecommerce.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\IT\Desktop\AmmarAhmed-W3-522011_Day2>

@@ -1,50 +1,58 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(144, 165, 42);
-    border: 5px dashed black;
+    background-color: #ffb703;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
+.playersInfo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    input[type='text']{
+        border: none;
+        border-radius: 5px;
+    }
+}
 .player1, .player2{
-    background-color: #eee;
+    background-color: #8ecae6;
+    color: black;
     padding: 5px;
     border-radius: 5px;
     margin: 3px;
 }
 
 .boxesBody {
+    display: flex;
+    justify-content: center;
     height: 100%;
-    border-left: 5px dashed black;
-    border-right: 5px dashed black;
-    margin: 0px 10px;
+    margin: 0px auto;
+    color: #023047;
 }
 
 .boxesBody table 
 .a ._0,
 .a ._1,
 .a ._2 {
-    border-bottom: 5px dotted black;
+    border-bottom: 5px dotted #023047;
 }
 
 .boxesBody table 
 .b ._0,
 .b ._1,
 .b ._2 {
-    border-bottom: 5px dotted black;
+    border-bottom: 5px dotted #023047;
 }
 
 .boxesBody table 
 .a ._0,
 .b ._0,
 .c ._0 {
-    border-right: 5px dotted black;
+    border-right: 5px dotted #023047;
 }
 .boxesBody table 
 .a ._2,
 .b ._2,
 .c ._2 {
-    border-left: 5px dotted black;
+    border-left: 5px dotted #023047;
 }
 
 .box {
@@ -57,6 +65,28 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+button{
+    color: #023047;
+}
 button:disabled{
-    color: black;
+    color: #023047;
+}
+.pointsConaner{
+    border: 1px solid #023047;
+    width: fit-content;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+
+    font-size: 20px;
+}
+.pointsConaner button{
+    border: 1px solid #023047;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    font-size: 20px;
+}
+.pointsConaner button:hover{
+    background-color: #023047;
+    color: white;
 }

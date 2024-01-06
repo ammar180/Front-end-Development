@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ShoppingCartStyle.css">
+    <title>E-commerce - Sopping Cart Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="topBar">
+            <h1>Sopping Website</h1>
+            <a href="HomeIndex.html" target="_blank"><button class="Mybtn">Home Page</button></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#C1"
+                        onclick="document.getElementById('Subtotal').textContent = '$150.00'; document.getElementById('Shipping').textContent = '$20.00'; document.getElementById('Total').textContent = '$170.00';">T-shirt</a>
+                </li>
+                <li><a href="#C2"
+                        onclick="document.getElementById('Subtotal').textContent = '$200.00'; document.getElementById('Shipping').textContent = '$30.00'; document.getElementById('Total').textContent = '$230.00';">Shoes</a>
+                </li>
+                <li><a href="#C3"
+                        onclick="document.getElementById('Subtotal').textContent = '$300.00'; document.getElementById('Shipping').textContent = '$50.00'; document.getElementById('Total').textContent = '$350.00';">Caps</a>
+                </li>
+                <li><a href="#C4"
+                        onclick="document.getElementById('Subtotal').textContent = '$400.00'; document.getElementById('Shipping').textContent = '$70.00'; document.getElementById('Total').textContent = '$470.00';">Pant</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;">Shopping Cart</h1>
+    <main>
+        <div class="slider">
+            <!-- Clothes Sections -->
+            <div id="C1">
+                <table id="prod1">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/T_shirt1 - Copy.jfif" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(1, 1, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(1, 1, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$75.55
+                        </td>
+                    </tbody>
+                </table>
+                <table id="prod2">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/T_shirt2 - Copy.jfif" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(1, 2, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(1, 2, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$75.55
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <div id="C2">
+                <table id="prod1">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/jordan - Copy.png" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(2, 1, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(2, 1, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$100
+                        </td>
+                    </tbody>
+                </table>
+                <table id="prod2">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/hippie - Copy.png" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(2, 2, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(2, 2, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$100
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <div id="C3">
+                <table id="prod1">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/Cap1 - Copy.jfif" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(3, 1, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(3, 1, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$150
+                        </td>
+                    </tbody>
+                </table>
+                <table id="prod2">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/Cap2 - Copy.jfif" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(3, 2, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(3, 2, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$150
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <div id="C4">
+                <table id="prod1">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/pant1 - Copy.jpg" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(4, 1, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(4, 1, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$200
+                        </td>
+                    </tbody>
+                </table>
+                <table id="prod2">
+                    <tbody>
+                        <td class="ImgAndInfo">
+                            <img src="img/pant2 - Copy.jpg" alt="The Product Image">
+                            <div style="padding: 10px" class="prodInfo">
+                                <h3>Hoodie with pouch pocket</h3>
+                                <p>Mid / S</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Add-Delete">
+                                <button onclick="QuantitySelector(4, 2, '-')">-</button>
+                                <span>1</span>
+                                <button onclick="QuantitySelector(4, 2, '+')">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <small>1×</small>$200
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="summary">
+            <table>
+                <thead>
+                    <th>
+                        <h2 style="width: min-content;">Summary</h2>
+                    </th>
+                </thead>
+                <tr>
+                    <td>Subtotal</td>
+                    <td class="prise" id="Subtotal">$150.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td class="prise" id="Shipping">$20.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td class="prise"><strong id="Total">$170.00</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input style="width: 100%;" type="text" name="" id="" placeholder="Enter coupon code here">
+                    </td>
+                </tr>
+                <tfoot>
+                    <td colspan="2"><button class="Mybtn">Check Out</button></td>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <h3>Branches:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+                <h3>Contacts:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+                <h3>Accounts:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+
+        </ul>
+    </footer>
+
+    <script>
+        function QuantitySelector(theClass, theProd, theOp) {
+            let SpanQuantity = document.querySelector(`#C${theClass} #prod${theProd} .Add-Delete span`);
+            switch (theOp) {
+                case '+':
+                    SpanQuantity.textContent = String(+SpanQuantity.textContent + 1);
+                    break;
+                case '-':
+                    if (SpanQuantity.textContent != '0') {
+                        SpanQuantity.textContent = String(+SpanQuantity.textContent - 1);
+                    }
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
